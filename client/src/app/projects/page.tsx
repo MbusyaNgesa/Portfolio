@@ -36,7 +36,7 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen py-10">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">PROJECTS</h1>
           <div className="border-b-2 border-gray-300 mb-6"></div>
@@ -54,7 +54,8 @@ export default function Projects() {
             <Card
               key={index}
               className="bg-gray-800 border-gray-700 
-              overflow-hidden hover:scale-105 hover:cursor-pointer "
+              overflow-hidden hover:scale-105 hover:cursor-pointer 
+              transition duration-700 "
             >
               <div className="relative h-48 w-full">
                 <Image

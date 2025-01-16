@@ -20,38 +20,40 @@ export default function Skills() {
       image: js,
       title: "Javascript",
     },
+    {
+      image: js,
+      title: "Javascript",
+    },
   ];
   return (
-    <div className="mt-5">
-      <div className="ml-7">
-        <h1 className="font-bold text-3xl">Skills</h1>
+    <div className="max-w-5xl mx-auto px-4 py-10">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl font-bold mb-4">SKILLS</h1>
+        <div className="border-b-2 border-gray-300 mb-6"></div>
       </div>
-      <div className="p-4 ml-3">
-        <p className="text-xl text-gray-700">
-          Here is the list of the skills I have acquired so far
-        </p>
-      </div>
-      <div
-        className="grid md:grid-cols-3 grid-cols-2 gap-2 
-      mt-6 text-center m-10  "
-      >
-        {skills.map((skill, index) => (
-          <Card key={index}>
-            <div
-              className="p-4 max-w-md border rounded-xl 
+      <div className="">
+        <div
+          className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3 
+      mt-6 text-center md:ml-[85px] md:mr-[85px] ml-4 mr-4"
+        >
+          {skills.map((skill, index) => (
+            <Card key={index}>
+              <div
+                className="flex p-4 max-w-md border rounded-xl 
           shadow-lg "
-            >
-              <Image
-                src={skill.image}
-                width={80}
-                height={80}
-                alt="Image Unavailable"
-                className=""
-              />
-              <h1>{skill.title}</h1>
-            </div>
-          </Card>
-        ))}
+              >
+                <Image
+                  src={skill.image}
+                  width={80}
+                  height={80}
+                  alt="Image Unavailable"
+                  className="rounded-xl"
+                />
+                <h1 className="p-6">{skill.title}</h1>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
