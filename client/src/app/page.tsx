@@ -26,11 +26,11 @@ export default function Home() {
   ];
 
   return (
-    <div className="container max-w-4xl mx-auto px-4">
-      <div className=" ">
+    <div className="container max-w-3xl mx-auto px-4">
+      <div className=" mt-4">
         {/*Header */}
         <div className="space-y-2">
-          <h1 className="text-3xl font-light">Ngesa Ian</h1>
+          <h1 className="text-4xl font-light">Ngesa Ian</h1>
           <h2 className="text-xl text-gray-400">
             Fullstack Developer | Backend
           </h2>
@@ -59,21 +59,24 @@ export default function Home() {
           <div>
             <h3 className="text-2xl mb-4">About Me</h3>
             <p className="text-gray-400">
-              I'm a fullstack developer specializing in modern web technologies.
-              With expertise in both frontend and backend development, I create
-              scalable and efficient solutions for complex problems.
+              I&apos;m a fullstack developer specializing in modern web
+              technologies. With expertise in both frontend and backend
+              development, I create scalable and efficient solutions for complex
+              problems.
             </p>
           </div>
 
           {/* Action Buttons */}
           <div className="flex gap-4">
             <Button
-              className="border-2 border-white/20 
-            hover:border-white/40 rounded-xl "
+              className="bg-black border-2 border-white/20 
+            hover:border-white/40  rounded-br-xl "
             >
               <Link
                 href="https://github.com/MbusyaNgesa"
                 className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
                 <Github className="ml-2 h-4 w-4" />
@@ -81,8 +84,8 @@ export default function Home() {
             </Button>
 
             <Button
-              className="border-2 border-teal-600
-             hover:border-white/40 rounded-xl"
+              className="bg-green-600 border-2 border-teal-600
+             hover:border-white/40 rounded-bl-xl text-white "
             >
               Resume
               <ArrowDownToLine className="ml-2 h-4 w-4" />
@@ -96,7 +99,11 @@ export default function Home() {
       <div className="flex justify-between items-center mb-6 px-4 mt-12">
         <h1 className="text-2xl font-bold">Projects</h1>
         <Link href="/projects">
-          <button className="text-blue-500 font-medium hover:underline">
+          <button
+            className="text-blue-500 font-medium
+          bg-black hover:underline p-[9px]
+           rounded-br-xl"
+          >
             View All
           </button>
         </Link>
