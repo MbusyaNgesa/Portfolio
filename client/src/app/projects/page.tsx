@@ -38,7 +38,7 @@ export default function Projects() {
     <div className="min-h-screen py-10">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">PROJECTS</h1>
+          <h1 className="text-4xl font-bold mb-4">Projects</h1>
           <div className="border-b-2 border-gray-300 mb-6"></div>
           <p className="text-gray-600 text-lg">
             A few of the projects that I have worked on over the years that I

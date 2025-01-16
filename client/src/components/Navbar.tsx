@@ -10,15 +10,15 @@ export const Navbar = () => {
               <li className="hover:underline hover:decoration-teal-400 ">
                 Home
               </li>
-            </Link>{" "}
-            <Link href="/about">
-              <li className="hover:underline hover:decoration-teal-400 ">
-                About
-              </li>
             </Link>
             <Link href="/projects">
               <li className="hover:underline hover:decoration-teal-400 ">
                 Projects
+              </li>
+            </Link>
+            <Link href="/education">
+              <li className="hover:underline hover:decoration-teal-400 ">
+                Education
               </li>
             </Link>
             <Link href="/skills">

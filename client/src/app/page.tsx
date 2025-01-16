@@ -3,50 +3,92 @@ import Link from "next/link";
 
 import profile from "../img/pfp1.jpeg";
 import { Button } from "@mui/material";
+import { ArrowDownToLine, Github } from "lucide-react";
 
 export default function Home() {
+  const projects = [
+    {
+      title: "Eventlify",
+      description: [
+        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
+      ],
+      techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
+      link: "https://github.com/MbusyaNgesa/eventnami",
+    },
+    {
+      title: "Eventlify",
+      description: [
+        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
+      ],
+      techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
+      link: "https://github.com/MbusyaNgesa/eventnami",
+    },
+  ];
+
   return (
-    <div className="p-2 ml-5 ">
-      <div className="mt-4 pb-4 flex flex-col justify-center items-center ">
-        <div className="text-left">
-          <h1 className="text-4xl">Ngesa Ian</h1>
-          <h2 className="text-3xl mt-2">
-            FullStack Developer | Tech Enthusiast
+    <div className="container max-w-4xl mx-auto px-4">
+      <div className=" ">
+        {/*Header */}
+        <div className="space-y-2">
+          <h1 className="text-3xl font-light">Ngesa Ian</h1>
+          <h2 className="text-xl text-gray-400">
+            Fullstack Developer | Backend
           </h2>
         </div>
       </div>
-      <div className="mt-4 lg:flex justify-center items-center ">
-        <Image
-          src={profile}
-          height={300}
-          width={300}
-          alt="Profile Photo"
-          className="rounded-xl w-64 h-64"
-        />
-        <div className="lg:ml-10 max-w-lg text-md ">
-          <h1 className="mt-6 lg:mt-0 text-2xl font-semibold">About</h1>
-          <p className="">
-            My name is Ian Ngesa a fullstack developer versed in MERN Stack
-            Languages I know are Javascript, Typescript, React, NodeJS I create
-            various projects from simple CRUD apps to big enterprise projects
-            according to ones needs Currently a freelance developer.
-          </p>
-          <div className="mt-4">
-            <p>
-              Reach out to me for more information about all the things I do
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum,
-              molestiae?
-            </p>
+
+      <div className="grid md:grid-cols-2 gap-0 mt-6 ">
+        {/* Image Section */}
+        <div className="relative aspect-square w-full max-w-[400px] ">
+          <div
+            className="absolute inset-0 rounded-3xl border-2
+           border-white/20 "
+          >
+            <Image
+              src={profile}
+              width={330}
+              height={330}
+              alt="Profile"
+              className="rounded-xl object-cover"
+            />
           </div>
         </div>
-      </div>
 
-      {/* Resume*/}
-      <div className=" flex space-x-4 justify-center mt-6">
-        <Link href="https://github.com/MbusyaNgesa">
-          <Button className="bg-black text-teal-600">Github</Button>
-        </Link>
-        <Button className="bg-teal-600 text-black ">Resume</Button>
+        {/* Description Section */}
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-2xl mb-4">About Me</h3>
+            <p className="text-gray-400">
+              I'm a fullstack developer specializing in modern web technologies.
+              With expertise in both frontend and backend development, I create
+              scalable and efficient solutions for complex problems.
+            </p>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex gap-4">
+            <Button
+              className="border-2 border-white/20 
+            hover:border-white/40 rounded-xl "
+            >
+              <Link
+                href="https://github.com/MbusyaNgesa"
+                className="flex items-center"
+              >
+                Github
+                <Github className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+
+            <Button
+              className="border-2 border-teal-600
+             hover:border-white/40 rounded-xl"
+            >
+              Resume
+              <ArrowDownToLine className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+        </div>
       </div>
 
       {/*Projects */}
@@ -65,44 +107,23 @@ export default function Home() {
 
       <div className="flex justify-center ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-2 ">
-          {/*Card 1 */}
-          <div
-            className="p-6 max-w-md border rounded-lg shadow-lg
+          {/*Cards */}
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="p-6 max-w-md border rounded-lg shadow-lg
            :"
-          >
-            <h1 className="font-bold text-md">Eventlify</h1>
-            <div className="border-b-2 border-gray-300 mb-6"></div>
-            <p className="mt-2 text-gray-700">
-              A web based events listing platform that incorporates vendors,
-              ticket system and two admin dashboards
-            </p>
-            <div className="mt-4">
-              <ul className="flex space-x-3 text-sm text-gray-600">
-                <li>NextJS</li>
-                <li>Typescript</li>
-                <li>Express</li>
-                <li>NodeJS</li>
-              </ul>
+            >
+              <h1 className="font-bold text-md">{project.title}</h1>
+              <div className="border-b-2 border-gray-300 mb-6"></div>
+              <p className="mt-2 text-gray-700">{project.description}</p>
+              <div className="mt-4">
+                <ul className="flex space-x-3 text-sm text-gray-600">
+                  <li>{project.techStack}</li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          {/*Card 2 */}
-          <div className="p-6 max-w-md border rounded-lg shadow-lg">
-            <h1 className="font-bold text-md">Eventlify</h1>
-            <div className="border-b-2 border-gray-300 mb-6"></div>
-            <p className="mt-2 text-gray-700">
-              A web based events listing platform that incorporates vendors,
-              ticket system and two admin dashboards
-            </p>
-            <div className="mt-4">
-              <ul className="flex space-x-3 text-sm text-gray-600">
-                <li>NextJS</li>
-                <li>Typescript</li>
-                <li>Express</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
