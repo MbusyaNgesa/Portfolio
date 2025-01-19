@@ -26,11 +26,17 @@ export default function Home() {
   ];
 
   return (
-    <div className="container max-w-3xl mx-auto px-4">
+    <div className="container max-w-4xl mx-auto px-4">
       <div className=" mt-4">
         {/*Header */}
         <div className="space-y-2">
-          <h1 className="text-4xl font-light">Ngesa Ian</h1>
+          <h1
+            className="text-4xl font-bold bg-gradient-to-r
+           from-indigo-500 via-purple-500
+            to-pink-500 inline-block text-transparent bg-clip-text"
+          >
+            Ngesa Ian
+          </h1>
           <h2 className="text-xl text-gray-400">
             Fullstack Developer | Backend
           </h2>
@@ -41,13 +47,13 @@ export default function Home() {
         {/* Image Section */}
         <div className="relative aspect-square w-full max-w-[400px] ">
           <div
-            className="absolute inset-0 rounded-3xl border-2
+            className="absolute inset-0 rounded-3xl border-0
            border-white/20 "
           >
             <Image
               src={profile}
-              width={330}
-              height={330}
+              width={350}
+              height={350}
               alt="Profile"
               className="rounded-xl object-cover"
             />

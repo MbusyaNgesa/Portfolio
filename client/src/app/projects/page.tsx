@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, CardHeader } from "@mui/material";
+import { Button, Card, CardContent } from "@mui/material";
 import project2 from "../images/pfp2.jpeg";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +13,17 @@ export default function Projects() {
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
       link: "https://github.com/MbusyaNgesa/eventlify",
+      live: "https://eventlifyke.vercel.app/",
+    },
+    {
+      image: project2,
+      title: "CashWrap",
+      description: [
+        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
+      ],
+      techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
+      link: "https://github.com/MbusyaNgesa/CashWrap",
+      live: "NA",
     },
     {
       image: project2,
@@ -22,15 +33,7 @@ export default function Projects() {
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
       link: "https://github.com/MbusyaNgesa/eventnami",
-    },
-    {
-      image: project2,
-      title: "Eventlify",
-      description: [
-        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
-      ],
-      techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
-      link: "https://github.com/MbusyaNgesa/eventnami",
+      live: "https://eventlifyke.vercel.app/",
     },
   ];
 
@@ -38,7 +41,13 @@ export default function Projects() {
     <div className="min-h-screen py-10">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">Projects</h1>
+          <h1
+            className="text-4xl font-bold mb-4 bg-gradient-to-r
+           from-indigo-500 via-purple-500
+            to-pink-500 inline-block text-transparent bg-clip-text"
+          >
+            Projects
+          </h1>
           <div className="border-b-2 border-gray-300 mb-6"></div>
           <p className="text-gray-600 text-lg">
             A few of the projects that I have worked on over the years that I
@@ -65,10 +74,11 @@ export default function Projects() {
                   className="object-cover"
                 />
               </div>
-              <CardHeader>
-                <h2 className="text-xl font-bold">{project.title}</h2>
-              </CardHeader>
               <CardContent>
+                <h2 className="text-xl text-white font-bold mb-2">
+                  {project.title}
+                </h2>
+
                 <p className="text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((stack, stackIndex) => (
@@ -83,9 +93,15 @@ export default function Projects() {
                 {/* <div className="text-gray-400">{project.year}</div> */}
                 <div>
                   <Button>
-                    <Link href={project.link}>Github</Link>
+                    <Link href={project.link} target="_blank">
+                      Github
+                    </Link>
                   </Button>
-                  <Button>Live</Button>
+                  <Button>
+                    <Link href={project.live} target="_blank">
+                      Live
+                    </Link>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -95,55 +111,3 @@ export default function Projects() {
     </div>
   );
 }
-
-// import { Card } from "@/types";
-// import { ProjectCard } from "@/components/ProjectCard";
-// import project from "../images/pfp2.jpeg";
-// import project2 from "../images/icon2.jpg";
-
-// export default function Projects() {
-//   const projectData: Card[] = [
-//     {
-//       image: project,
-//       title: "Eventlify",
-//       description: [
-//         "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
-//       ],
-//       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
-//     },
-//     {
-//       image: project2,
-//       title: "Eventlify",
-//       description: [
-//         "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
-//       ],
-//       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
-//     },
-//     {
-//       image: project,
-//       title: "Eventlify",
-//       description: [
-//         "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
-//       ],
-//       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
-//     },
-//   ];
-
-//   return (
-//     <>
-//       <div>
-//         <div className="text-center my-6">
-//           <h1 className="text-2xl font-bold">Projects</h1>
-//           <div className="border-b-2 border-gray-300 w-20 mx-auto my-2"></div>
-//         </div>
-//         <div className="flex justify-center">
-//           <div className="grid md:grid-cols-2 grid-cols-1 gap-y-4 gap-x-6">
-//             {projectData.map((project, index) => (
-//               <ProjectCard key={index} card={project} />
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }

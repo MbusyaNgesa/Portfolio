@@ -28,7 +28,13 @@ export default function Skills() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4">SKILLS</h1>
+        <h1
+          className="text-4xl font-bold mb-4 bg-gradient-to-r
+           from-indigo-500 via-purple-500
+            to-pink-500 inline-block text-transparent bg-clip-text"
+        >
+          SKILLS
+        </h1>
         <div className="border-b-2 border-gray-300 mb-6"></div>
       </div>
       <div className="">
