@@ -102,7 +102,10 @@ export default function Home() {
 
       {/*Projects */}
 
-      <div className="flex justify-between items-center mb-6 px-4 mt-12">
+      <div
+        className="flex justify-between items-center mb-6 
+      px-4 mt-12"
+      >
         <h1 className="text-2xl font-bold">Projects</h1>
         <Link href="/projects">
           <button
