@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import profile from "../img/pfp1.jpeg";
 import { Button } from "@mui/material";
-import { ArrowDownToLine, Github, Linkedin } from "lucide-react";
+import { ArrowDownToLine, Github } from "lucide-react";
 import { QuickLinks } from "@/components/QuickLinks";
 
 export default function Home() {
