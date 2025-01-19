@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import profile from "../img/pfp1.jpeg";
 import { Button } from "@mui/material";
-import { ArrowDownToLine, Github } from "lucide-react";
+import { ArrowDownToLine, Github, Linkedin } from "lucide-react";
+import { QuickLinks } from "@/components/QuickLinks";
 
 export default function Home() {
   const projects = [
@@ -16,7 +17,7 @@ export default function Home() {
       link: "https://github.com/MbusyaNgesa/eventnami",
     },
     {
-      title: "Eventlify",
+      title: "Cashwrap",
       description: [
         "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
       ],
@@ -63,7 +64,7 @@ export default function Home() {
         {/* Description Section */}
         <div className="space-y-8">
           <div>
-            <h3 className="text-2xl mb-4">About Me</h3>
+            <h3 className="text-2xl mb-4 text-white">About Me</h3>
             <p className="text-gray-400">
               I&apos;m a fullstack developer specializing in modern web
               technologies. With expertise in both frontend and backend
@@ -80,22 +81,26 @@ export default function Home() {
             >
               <Link
                 href="https://github.com/MbusyaNgesa"
-                className="flex items-center"
+                className="flex items-center w-[80px] h-[30px] "
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Github
-                <Github className="ml-2 h-4 w-4" />
+                <Github className=" h-4 w-4" />
               </Link>
             </Button>
 
-            <Button
-              className="bg-green-600 border-2 border-teal-600
-             hover:border-white/40 rounded-bl-xl text-white "
+            <a
+              href="/btb2.jpg"
+              download="Ngesa Resume.jpg"
+              className="bg-green-600 border-2 w-[100px]
+              border-teal-600 hover:border-white/40 
+              rounded-bl-xl text-white flex items-center
+              justify-center gap-2 "
             >
               Resume
-              <ArrowDownToLine className="ml-2 h-4 w-4" />
-            </Button>
+              <ArrowDownToLine className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
@@ -106,7 +111,7 @@ export default function Home() {
         className="flex justify-between items-center mb-6 
       px-4 mt-12"
       >
-        <h1 className="text-2xl font-bold">Projects</h1>
+        <h1 className="text-2xl text-white font-bold">Projects</h1>
         <Link href="/projects">
           <button
             className="text-blue-500 font-medium
@@ -122,7 +127,7 @@ export default function Home() {
       <div className="border-b-2 border-gray-300 mb-6"></div>
 
       <div className="flex justify-center ">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-2 ">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-6  ">
           {/*Cards */}
           {projects.map((project, index) => (
             <div
@@ -130,18 +135,25 @@ export default function Home() {
               className="p-6 max-w-md border rounded-lg shadow-lg
            :"
             >
-              <h1 className="font-bold text-md">{project.title}</h1>
+              <h1 className="font-bold text-md text-white">{project.title}</h1>
               <div className="border-b-2 border-gray-300 mb-6"></div>
-              <p className="mt-2 text-gray-700">{project.description}</p>
-              <div className="mt-4">
-                <ul className="flex space-x-3 text-sm text-gray-600">
-                  <li>{project.techStack}</li>
-                </ul>
+              <p className="mt-2 text-white/50">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {project.techStack.map((stack, stackIndex) => (
+                  <span
+                    key={stackIndex}
+                    className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded"
+                  >
+                    {stack}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <QuickLinks />
     </div>
   );
 }

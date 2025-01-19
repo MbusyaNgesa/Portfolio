@@ -1,6 +1,5 @@
 import Image from "next/image";
 import js from "../images/pfp2.jpeg";
-import { Card } from "@mui/material";
 
 export default function Skills() {
   const skills = [
@@ -25,6 +24,7 @@ export default function Skills() {
       title: "Javascript",
     },
   ];
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="text-center mb-16">
@@ -43,21 +43,23 @@ export default function Skills() {
       mt-6 text-center md:ml-[85px] md:mr-[85px] ml-4 mr-4"
         >
           {skills.map((skill, index) => (
-            <Card key={index}>
-              <div
-                className="flex p-4 max-w-md border rounded-xl 
-          shadow-lg "
-              >
-                <Image
-                  src={skill.image}
-                  width={80}
-                  height={80}
-                  alt="Image Unavailable"
-                  className="rounded-xl"
-                />
-                <h1 className="p-6">{skill.title}</h1>
-              </div>
-            </Card>
+            // <Card  >
+            <div
+              key={index}
+              className="flex bg-slate-100 p-4 max-w-md border-2 rounded-xl 
+          shadow-xl hover:border-green-600 
+           hover:ring-orange-300 transition-all cursor-pointer"
+            >
+              <Image
+                src={skill.image}
+                width={80}
+                height={80}
+                alt="Image Unavailable"
+                className="rounded-xl"
+              />
+              <h1 className="p-6">{skill.title}</h1>
+            </div>
+            // </Card>
           ))}
         </div>
       </div>
