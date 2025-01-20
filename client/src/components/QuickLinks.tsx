@@ -29,7 +29,7 @@ export const QuickLinks = () => {
           </Link>
 
           <Link
-            href="https://wa.me/0794843866?text=Hello%20there!%20I%20would%20like%20to%20connect."
+            href="https://wa.me/254794843866?text=Hello%20there!%20I%20would%20like%20to%20connect."
             target="_blank"
           >
             <MessageCircle className="h-6 w-6 text-green-500" />
