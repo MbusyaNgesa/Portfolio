@@ -35,7 +35,7 @@ export const QuickLinks = () => {
             <MessageCircle className="h-6 w-6 text-green-500" />
           </Link>
         </div>
-        <div className="border-b-2 border-gray-300 mb-6 mt-4"></div>
+        <div className="border-b-2 border-gray-300 mb-28 mt-4 "></div>
         <div className="flex"></div>
       </div>
     </>
