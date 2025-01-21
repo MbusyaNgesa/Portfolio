@@ -142,7 +142,8 @@ export default function Home() {
                 {project.techStack.map((stack, stackIndex) => (
                   <span
                     key={stackIndex}
-                    className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded"
+                    className="px-3 py-1 bg-gray-700 
+                    text-gray-300 text-sm rounded"
                   >
                     {stack}
                   </span>

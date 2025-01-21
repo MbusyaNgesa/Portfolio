@@ -20,8 +20,8 @@ const educationData = [
     icon: Shield,
   },
   {
-    title: "Data Protection Certification",
-    institution: "Strathmore University",
+    title: "Postman Certification",
+    institution: "Postman",
     year: "2024",
     icon: Shield,
   },
@@ -45,12 +45,12 @@ export default function Education() {
         <div className="relative">
           <div
             className="absolute left-1/2 transform -translate-x-1/2 
-          h-full w-1 bg-gray-200"
+          h-full w-1 bg-gray-200 "
           ></div>
           {educationData.map((item, index) => (
             <div
               key={index}
-              className={`mb-8 flex justify-between items-center w-full ${
+              className={`mb-6 flex justify-between items-center w-full ${
                 index % 2 === 0
                   ? "flex-row-reverse left-timeline"
                   : "right-timeline"
@@ -93,6 +93,7 @@ export default function Education() {
           ))}
         </div>
       </div>
+      <div className="border-b-2 border-gray-300 mb-6 mt-20 "></div>
     </section>
   );
 }

@@ -57,14 +57,14 @@ export default function Projects() {
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-8 
-        max-w-4xl mx-auto"
+         max-w-4xl mx-auto mb-14"
         >
           {projects.map((project, index) => (
             <Card
               key={index}
               className="bg-gray-800 border-gray-700 
               overflow-hidden hover:scale-105 hover:cursor-pointer 
-              transition duration-700 "
+              transition duration-700 mb-2"
             >
               <div className="relative h-48 w-full">
                 <Image
@@ -107,6 +107,7 @@ export default function Projects() {
             </Card>
           ))}
         </div>
+        <div className="border-b-2 border-gray-300 mb-6"></div>
       </div>
     </div>
   );

@@ -9,19 +9,47 @@ export default function Skills() {
     },
     {
       image: js,
-      title: "Javascript",
+      title: "Typescript",
     },
     {
       image: js,
-      title: "Javascript",
+      title: "ReactJS",
     },
     {
       image: js,
-      title: "Javascript",
+      title: "NextJS",
     },
     {
       image: js,
-      title: "Javascript",
+      title: "NodeJS",
+    },
+    {
+      image: js,
+      title: "Express",
+    },
+    {
+      image: js,
+      title: "MySQL",
+    },
+    {
+      image: js,
+      title: "MongoDB",
+    },
+    {
+      image: js,
+      title: "FireBase",
+    },
+    {
+      image: js,
+      title: "CSS",
+    },
+    {
+      image: js,
+      title: "Tailwind",
+    },
+    {
+      image: js,
+      title: "Bootstrap",
     },
   ];
 
@@ -39,8 +67,8 @@ export default function Skills() {
       </div>
       <div className="">
         <div
-          className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3 
-      mt-6 text-center md:ml-[85px] md:mr-[85px] ml-4 mr-4"
+          className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 md:gap-5 gap-3 
+      mt-6 text-center md:ml-[85px] md:mr-[85px] ml-4 mr-4 mb-14 "
         >
           {skills.map((skill, index) => (
             // <Card  >
@@ -63,6 +91,7 @@ export default function Skills() {
           ))}
         </div>
       </div>
+      <div className="border-b-2 border-gray-300 mb-6"></div>
     </div>
   );
 }

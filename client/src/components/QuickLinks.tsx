@@ -4,7 +4,7 @@ import Link from "next/link";
 export const QuickLinks = () => {
   return (
     <>
-      <div>
+      <div className="">
         <div
           className="flex justify-center items-center mb-6 
       px-4 mt-12 space-x-5 "
