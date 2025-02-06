@@ -1,12 +1,15 @@
 import { Button, Card, CardContent } from "@mui/material";
-import project2 from "../images/pfp2.jpeg";
 import Image from "next/image";
 import Link from "next/link";
+
+import eventlify from "../images/eventlify.png";
+import cashwrap from "../images/cashwrap.jpg";
+import rental from "../images/rental1.webp";
 
 export default function Projects() {
   const projects = [
     {
-      image: project2,
+      image: eventlify,
       title: "Eventlify",
       description: [
         "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
@@ -16,24 +19,24 @@ export default function Projects() {
       live: "https://eventlifyke.vercel.app/",
     },
     {
-      image: project2,
+      image: cashwrap,
       title: "CashWrap",
       description: [
-        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
+        "A budget tracking web app that helps users manage their finances by tracking income and expenses in real time.",
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
       link: "https://github.com/MbusyaNgesa/CashWrap",
       live: "NA",
     },
     {
-      image: project2,
-      title: "Eventlify",
+      image: rental,
+      title: "Motorhub",
       description: [
-        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
+        "A car rental app that simplifies the process of renting and offers a wide selection of cars to choose from.",
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
       link: "https://github.com/MbusyaNgesa/eventnami",
-      live: "https://eventlifyke.vercel.app/",
+      live: "NA",
     },
   ];
 
@@ -42,9 +45,9 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
           <h1
-            className="text-4xl font-bold mb-4 bg-gradient-to-r
-           from-indigo-500 via-purple-500
-            to-pink-500 inline-block text-transparent bg-clip-text"
+            className="text-[44px] font-bold mb-4 bg-gradient-to-r 
+           from-lime-400 via-green-400
+            to-emerald-500 inline-block text-transparent bg-clip-text"
           >
             Projects
           </h1>
@@ -62,7 +65,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="bg-gray-800 border-gray-700 
+              className="bg-slate-700/40 border-gray-700 
               overflow-hidden hover:scale-105 hover:cursor-pointer 
               transition duration-700 mb-2"
             >
@@ -78,26 +81,26 @@ export default function Projects() {
                 <h2 className="text-xl text-white font-bold mb-2">
                   {project.title}
                 </h2>
-
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <div className="border-b-2 border-gray-400 mb-2"></div>
+                <p className="text-white/80 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((stack, stackIndex) => (
                     <span
                       key={stackIndex}
-                      className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded"
+                      className="px-3 py-1 bg-cyan-800/40 text-gray-300 text-sm rounded"
                     >
                       {stack}
                     </span>
                   ))}
                 </div>
                 {/* <div className="text-gray-400">{project.year}</div> */}
-                <div>
-                  <Button>
+                <div className="flex space-x-2">
+                  <Button className="bg-black">
                     <Link href={project.link} target="_blank">
                       Github
                     </Link>
                   </Button>
-                  <Button>
+                  <Button className="bg-cyan-800 text-white ">
                     <Link href={project.live} target="_blank">
                       Live
                     </Link>

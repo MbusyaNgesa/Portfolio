@@ -1,5 +1,16 @@
 import Image from "next/image";
-import js from "../images/pfp2.jpeg";
+import js from "../images/js.png";
+import ts from "../images/ts.png";
+import react from "../images/react.jpg";
+import next from "../images/nextjs.jpg";
+import node from "../images/nodejs.png";
+import express from "../images/expressjs.png";
+import mysql from "../images/mySql.png";
+import mongodb from "../images/mongodb.png";
+import firebase from "../images/firebase.png";
+import css from "../images/css.png";
+import tailwind from "../images/tailwind.jpg";
+import bootstrap from "../images/bootstrap.jpg";
 
 export default function Skills() {
   const skills = [
@@ -8,47 +19,47 @@ export default function Skills() {
       title: "Javascript",
     },
     {
-      image: js,
+      image: ts,
       title: "Typescript",
     },
     {
-      image: js,
+      image: react,
       title: "ReactJS",
     },
     {
-      image: js,
+      image: next,
       title: "NextJS",
     },
     {
-      image: js,
+      image: node,
       title: "NodeJS",
     },
     {
-      image: js,
+      image: express,
       title: "Express",
     },
     {
-      image: js,
+      image: mysql,
       title: "MySQL",
     },
     {
-      image: js,
+      image: mongodb,
       title: "MongoDB",
     },
     {
-      image: js,
+      image: firebase,
       title: "FireBase",
     },
     {
-      image: js,
+      image: css,
       title: "CSS",
     },
     {
-      image: js,
+      image: tailwind,
       title: "Tailwind",
     },
     {
-      image: js,
+      image: bootstrap,
       title: "Bootstrap",
     },
   ];

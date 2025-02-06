@@ -9,7 +9,7 @@ export const QuickLinks = () => {
           className="flex justify-center items-center mb-6 
       px-4 mt-12 space-x-5 "
         >
-          <Link href="mailto:mbusyangesa28@gmail.com" target="_blank">
+          <Link href="mailto:theengesa@gmail.com" target="_blank">
             <Mail className="h-6 w-6 text-white" />
           </Link>
 
@@ -17,14 +17,11 @@ export const QuickLinks = () => {
             <Github className="h-6 w-6 text-white" />
           </Link>
 
-          <Link
-            href="https://www.linkedin.com/in/ian-ngesa-824202302/"
-            target="_blank"
-          >
+          <Link href="https://www.linkedin.com/in/ianngesa/ " target="_blank">
             <Linkedin className="h-6 w-6 text-white" />
           </Link>
 
-          <Link href="https://x.com/ian_mbusya" target="_blank">
+          <Link href="https://x.com/ngesadev" target="_blank">
             <Twitter className="h-6 w-6 text-blue-500" />
           </Link>
 

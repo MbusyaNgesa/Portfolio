@@ -29,16 +29,16 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-10 bg-slate-900">
+    <section className="max-w-5xl mx-auto px-4 py-10 ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1
-            className="text-4xl font-bold mb-4 bg-gradient-to-r
-           from-indigo-500 via-purple-500
-            to-pink-500 inline-block text-transparent bg-clip-text"
+            className="text-[44px] font-bold mb-4 bg-gradient-to-r
+           from-sky-500 via-blue-600
+            to-indigo-600 inline-block text-transparent bg-clip-text"
           >
             Mastery<span className="text-6xl">.</span>
-            Schools Certifications
+            Schools<span className="text-6xl">.</span>Certifications
           </h1>
           <div className="border-b-2 border-gray-300 mb-6"></div>
         </div>

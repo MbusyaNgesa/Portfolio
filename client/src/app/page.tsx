@@ -32,7 +32,7 @@ export default function Home() {
         {/*Header */}
         <div className="space-y-2">
           <h1
-            className="text-4xl font-bold bg-gradient-to-r
+            className="text-[44px] font-bold bg-gradient-to-r
            from-indigo-500 via-purple-500
             to-pink-500 inline-block text-transparent bg-clip-text"
           >
@@ -91,7 +91,7 @@ export default function Home() {
             </Button>
 
             <a
-              href="/btb2.jpg"
+              href="/resume.pdf"
               download="Ngesa Resume.jpg"
               className="bg-green-600 border-2 w-[100px]
               border-teal-600 hover:border-white/40 
