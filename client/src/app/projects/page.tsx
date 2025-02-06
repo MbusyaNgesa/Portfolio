@@ -64,51 +64,50 @@ export default function Projects() {
         >
           {projects.map((project, index) => (
             <Card
+              sx={{ backgroundColor: "black" }}
               key={index}
-              className="
+              className="bg-slate-700/40 border-gray-700 
               overflow-hidden hover:scale-105 hover:cursor-pointer 
               transition duration-700 mb-2"
             >
-              <div className="bg-black border">
-                <div className="relative h-48 w-full">
-                  <Image
-                    src={project.image || "No Project Image"}
-                    alt={`${project.title} preview`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <CardContent>
-                  <h2 className="text-xl text-white font-bold mb-2">
-                    {project.title}
-                  </h2>
-                  <div className="border-b-2 border-gray-400 mb-2"></div>
-                  <p className="text-white/80 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.techStack.map((stack, stackIndex) => (
-                      <span
-                        key={stackIndex}
-                        className="px-3 py-1 bg-cyan-800/40 text-gray-300 text-sm rounded"
-                      >
-                        {stack}
-                      </span>
-                    ))}
-                  </div>
-                  {/* <div className="text-gray-400">{project.year}</div> */}
-                  <div className="flex space-x-2">
-                    <Button className="bg-black">
-                      <Link href={project.link} target="_blank">
-                        Github
-                      </Link>
-                    </Button>
-                    <Button className="bg-cyan-800 text-white ">
-                      <Link href={project.live} target="_blank">
-                        Live
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
+              <div className="relative h-48 w-full">
+                <Image
+                  src={project.image || "No Project Image"}
+                  alt={`${project.title} preview`}
+                  fill
+                  className="object-cover"
+                />
               </div>
+              <CardContent>
+                <h2 className="text-xl text-white font-bold mb-2">
+                  {project.title}
+                </h2>
+                <div className="border-b-2 border-gray-400 mb-2"></div>
+                <p className="text-white/80 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.techStack.map((stack, stackIndex) => (
+                    <span
+                      key={stackIndex}
+                      className="px-3 py-1 bg-cyan-800/40 text-gray-300 text-sm rounded"
+                    >
+                      {stack}
+                    </span>
+                  ))}
+                </div>
+                {/* <div className="text-gray-400">{project.year}</div> */}
+                <div className="flex space-x-2">
+                  <Button className="bg-black">
+                    <Link href={project.link} target="_blank">
+                      Github
+                    </Link>
+                  </Button>
+                  <Button className="bg-cyan-800 text-white ">
+                    <Link href={project.live} target="_blank">
+                      Live
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
             </Card>
           ))}
         </div>
