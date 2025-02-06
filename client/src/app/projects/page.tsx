@@ -65,7 +65,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="bg-slate-700/40 border-gray-700 
+              className="bg-black border
               overflow-hidden hover:scale-105 hover:cursor-pointer 
               transition duration-700 mb-2"
             >
