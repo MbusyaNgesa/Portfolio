@@ -92,7 +92,7 @@ export default function Home() {
 
             <a
               href="/resume.pdf"
-              download="Ngesa Resume.jpg"
+              download="Ngesa_Resume.pdf"
               className="bg-green-600 border-2 w-[100px]
               border-teal-600 hover:border-white/40 
               rounded-bl-xl text-white flex items-center
