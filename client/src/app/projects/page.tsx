@@ -64,9 +64,9 @@ export default function Projects() {
         >
           {projects.map((project, index) => (
             <Card
-              sx={{ backgroundColor: "black" }}
+              sx={{ backgroundColor: "bg-slate-700/40" }}
               key={index}
-              className="bg-slate-700/40 border-gray-700 
+              className=" border-gray-700 
               overflow-hidden hover:scale-105 hover:cursor-pointer 
               transition duration-700 mb-2"
             >
