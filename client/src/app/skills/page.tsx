@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import js from "../images/js.png";
 import ts from "../images/ts.png";
 import react from "../images/react.jpg";
@@ -96,7 +97,7 @@ export default function Skills() {
                 alt="Image Unavailable"
                 className="rounded-xl"
               />
-              <h1 className="p-6">{skill.title}</h1>
+              <h1 className="p-6 text-black">{skill.title}</h1>
             </div>
             // </Card>
           ))}
