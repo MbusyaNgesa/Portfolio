@@ -19,7 +19,7 @@ export default function Home() {
     {
       title: "Cashwrap",
       description: [
-        "A web-based events listing platform that incorporates vendors, a ticket system, and two admin dashboards.",
+        "A budget tracking web app that helps users manage their finances by tracking income and expenses in real time.",
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
       link: "https://github.com/MbusyaNgesa/eventnami",
@@ -32,15 +32,13 @@ export default function Home() {
         {/*Header */}
         <div className="space-y-2">
           <h1
-            className="text-[44px] font-bold bg-gradient-to-r
-           from-indigo-500 via-purple-500
-            to-pink-500 inline-block text-transparent bg-clip-text"
+            className="text-[46px] font-bold bg-gradient-to-r
+           from-teal-200 via-blue-500
+            to-teal-200 inline-block text-transparent bg-clip-text"
           >
             Ngesa Ian
           </h1>
-          <h2 className="text-xl text-gray-400">
-            Fullstack Developer | Backend
-          </h2>
+          <h2 className="text-xl text-gray-400">Fullstack Developer | MERN</h2>
         </div>
       </div>
 
@@ -68,8 +66,8 @@ export default function Home() {
             <p className="text-gray-400">
               I&apos;m a fullstack developer specializing in modern web
               technologies. With expertise in both frontend and backend
-              development, I create scalable and efficient solutions for complex
-              problems.
+              development using MERN stack, I create scalable and efficient
+              solutions for complex problems.
             </p>
           </div>
 

@@ -70,7 +70,7 @@ export default function Skills() {
       <div className="text-center mb-16">
         <h1
           className="text-4xl font-bold mb-4 bg-gradient-to-r
-           from-indigo-500 via-purple-500
+           from-sky-500 via-purple-500
             to-pink-500 inline-block text-transparent bg-clip-text"
         >
           SKILLS
@@ -86,7 +86,7 @@ export default function Skills() {
             // <Card  >
             <div
               key={index}
-              className="flex bg-slate-100 p-4 max-w-md border-2 rounded-xl 
+              className="flex bg-white/85 p-4 max-w-md border-2 rounded-xl 
           shadow-xl hover:border-green-600 
            hover:ring-orange-300 transition-all cursor-pointer"
             >

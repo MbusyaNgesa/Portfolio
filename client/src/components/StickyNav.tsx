@@ -33,9 +33,10 @@ export function StickyNav() {
             href={link.href}
             className={`p-2.5  hover:scale-110 
                 transition-transform duration-200 flex 
-                items-center justify-center`}
+                items-center justify-center hover:bg-blue-500 
+                hover:rounded-xl hover:text-black `}
           >
-            <span className=" text-white">{link.name}</span>
+            <span className=" text-white hover:text-black ">{link.name}</span>
           </Link>
         ))}
       </div>
