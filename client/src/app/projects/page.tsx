@@ -26,7 +26,7 @@ export default function Projects() {
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
       link: "https://github.com/MbusyaNgesa/CashWrap",
-      live: "NA",
+      live: "https://github.com/MbusyaNgesa/CashWrap",
     },
     {
       image: rental,
@@ -35,8 +35,8 @@ export default function Projects() {
         "A car rental app that simplifies the process of renting and offers a wide selection of cars to choose from.",
       ],
       techStack: ["NextJS", "TypeScript", "Express", "NodeJS"],
-      link: "https://github.com/MbusyaNgesa/eventnami",
-      live: "NA",
+      link: "https://github.com/MbusyaNgesa/Motorhub",
+      live: "https://github.com/MbusyaNgesa/Motorhub",
     },
   ];
 
